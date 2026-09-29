@@ -14,7 +14,7 @@ export default async function LoginPage({
     "use server";
     const email = formData.get("email") as string;
     const password = formData.get("password") as string;
-    const target = (formData.get("callbackUrl") as string) || "/documents";
+    const target = (formData.get("callbackUrl") as string) || "/dashboard";
 
     try {
       await signIn("credentials", {
@@ -54,7 +54,7 @@ export default async function LoginPage({
         <input
           type="hidden"
           name="callbackUrl"
-          value={callbackUrl ?? "/documents"}
+          value={callbackUrl ?? "/dashboard"}
         />
 
         <div className="space-y-1">
