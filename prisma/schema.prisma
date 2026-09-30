@@ -14,7 +14,7 @@ datasource db {
 
 model User {
   id           String  @id @default(cuid())
-  employeeCode String? @unique // รหัสพนักงาน (optional)
+  employeeCode String? // รหัสพนักงาน (optional)
   email        String  @unique
   name         String
   passwordHash String

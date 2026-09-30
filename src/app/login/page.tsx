@@ -38,7 +38,7 @@ export default async function LoginPage({
       >
         <div>
           <h1 className="text-xl font-bold text-gray-900">
-            ระบบจัดเก็บเอกสารภายในองค์กร
+            ระบบจัดเก็บเอกสารภายในองค์กร (TWP)
           </h1>
           <p className="mt-1 text-sm text-gray-500">
             เข้าสู่ระบบเพื่อดำเนินการต่อ

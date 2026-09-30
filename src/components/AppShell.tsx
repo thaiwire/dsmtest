@@ -39,7 +39,7 @@ export async function AppShell({
               {user?.avatarPath ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
-                  src={`/api/users/${userId}/avatar`}
+                  src={`/api/users/${userId}/avatar?v=${encodeURIComponent(user.avatarPath)}`}
                   alt=""
                   className="h-7 w-7 rounded-full object-cover"
                 />
